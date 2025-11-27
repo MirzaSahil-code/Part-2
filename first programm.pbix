@@ -1,0 +1,152 @@
+create database university;
+
+show databases;
+
+drop database university;
+
+use university;
+
+create table student(
+sid int,
+sname char(10),
+sper float
+);
+
+show tables;
+
+describe student;
+
+
+create table employ(num int,salary float,name char(11));
+describe employ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+create database users;
+use users;
+create table details(
+id character(10),
+mobile INT(10),
+gender ENUM('male','female','other'),
+date date
+
+
+);
+
+select * from details;
+alter table details add column name char(30) default true;
+alter table details drop column date_of_registation;
+alter table details add column date datetime;
+alter table details MODIFY COLUMN date datetime after mobile;
+insert into details value 
+('1','sahil mirza','9011133698','2025-3-11','male'),
+('2','Aisha Khan','9837420192','2001-07-25','female'),
+('3','Rohan Patel','8793021745','1999-12-04','male'),
+('4','Priya Sharma','9201837465','2002-09-18','female'),
+('5','Arjun Mehta','7019384756','2000-02-10','male'),
+('6','Neha Gupta','8129374650','2003-05-30','female'),
+('7','Imran Sheikh','7891045623','1998-10-14','male'),
+('8','Meera Nair','9012738490','2001-11-21','female'),
+('9','Vikram Singh','8801927364','1997-08-05','male'),
+('10','Anjali Verma','7301829456','2004-04-19','female'),
+('11','Rajesh Kumar','9812039485','1999-09-17','male'),
+('12','Simran Kaur','9023748120','2002-06-23','female'),
+('13','Amit Bansal','8819203746','2001-05-12','male'),
+('14','Kritika Joshi','9102847362','2000-10-03','female'),
+('15','Farhan Ali','7901384726','1998-04-25','male'),
+('16','Sneha Kapoor','8739201845','2001-12-15','female'),
+('17','Karan Malhotra','9028173645','2003-01-05','male'),
+('18','Tanya Sinha','8301927465','1999-11-27','female'),
+('19','Devansh Jain','9837219405','2000-08-22','male'),
+('20','Ritika Das','9028471639','2002-03-16','female'),
+('21','Harsh Vardhan','7819302746','2000-07-10','male'),
+('22','Aarohi Sen','9012837462','2001-09-30','female'),
+('23','Nikhil Thakur','8829301745','1998-01-19','male'),
+('24','Pooja Iyer','9201847365','2003-04-09','female'),
+('25','Aditya Rao','7891045621','2000-11-02','male'),
+('26','Ishita Ghosh','8012937460','2004-01-29','female'),
+('27','Manish Yadav','8729103845','1999-05-07','male'),
+('28','Shreya Paul','9012738499','2001-06-18','female'),
+('29','Rahul Verma','8801937462','1997-03-22','male'),
+('30','Divya Nair','9302847163','2000-02-14','female'),
+('31','Anurag Das','7012938475','1999-07-09','male'),
+('32','Jasleen Kaur','8921037485','2003-12-30','female'),
+('33','Deepak Tiwari','9021837462','1998-09-03','male'),
+('34','Avni Mehta','8710293847','2001-05-20','female'),
+('35','Sandeep Reddy','9830192746','1999-10-08','male'),
+('36','Kavya Menon','9012748364','2002-02-25','female'),
+('37','Rajat Kapoor','7801937465','1998-08-19','male'),
+('38','Pallavi Deshmukh','9201837461','2003-06-27','female'),
+('39','Mohit Arora','8120394756','2000-01-11','male'),
+('40','Shruti Sharma','9012837468','2002-11-15','female'),
+('41','Arnav Singh','8701927364','1999-04-28','male'),
+('42','Nisha Patel','8021749385','2001-01-17','female'),
+('43','Sameer Qureshi','8930271645','1998-03-12','male'),
+('44','Chhavi Gupta','9120384756','2000-09-07','female'),
+('45','Rohit Chauhan','7819203745','1999-02-21','male'),
+('46','Ananya Basu','9038172645','2003-07-13','female'),
+('47','Yash Raj','7891038475','1998-10-01','male'),
+('48','Sanya Kapoor','9012837469','2002-12-08','female'),
+('49','Aman Ali','8901327465','1999-08-24','male'),
+('50','Kiran Dutta','9120394756','2001-11-26','female'),
+('51','Parth Jain','7829103845','2000-06-14','male'),
+('52','Rhea Sen','9012738492','2003-05-19','female'),
+('53','Tushar Reddy','8801937468','1998-07-05','male'),
+('54','Ira Sharma','9302847168','2002-03-02','female'),
+('55','Lokesh Verma','7012938472','1999-09-09','male'),
+('56','Mitali Nair','8921037482','2001-04-06','female'),
+('57','Saurabh Patel','9021837468','1997-01-31','male'),
+('58','Kashish Joshi','8710293845','2000-10-13','female'),
+('59','Vivek Chauhan','9830192742','1998-02-28','male'),
+('60','Diya Mehra','9012748361','2003-09-16','female'),
+('61','Ajay Yadav','7801937462','1999-05-11','male'),
+('62','Muskan Kapoor','9201837460','2002-07-20','female'),
+('63','Rishi Bhatia','8120394752','2000-12-03','male'),
+('64','Tanvi Ghosh','9012837467','2001-06-09','female'),
+('65','Aadesh Raina','8701927363','1998-04-22','male'),
+('66','Nandini Desai','8021749381','2003-02-27','female'),
+('67','Prateek Arora','8930271641','2000-08-12','male'),
+('68','Pooja Kumar','9120384752','2002-01-05','female'),
+('69','Harshit Sharma','7819203742','1999-03-26','male'),
+('70','Anushka Iyer','9038172642','2003-11-01','female'),
+('71','Varun Singh','7891038472','2000-02-07','male'),
+('72','Esha Malhotra','9012837465','2001-09-19','female'),
+('73','Zaid Khan','8901327462','1998-05-24','male'),
+('74','Aaradhya Menon','9120394752','2002-10-14','female'),
+('75','Raghav Verma','7829103842','1999-12-22','male'),
+('76','Kiara Sen','9012738495','2001-03-18','female'),
+('77','Siddharth Jain','8801937464','1998-06-02','male'),
+('78','Manya Gupta','9302847165','2003-08-10','female'),
+('79','Krish Mehta','7012938470','2000-05-04','male'),
+('80','Shivangi Das','8921037480','2002-09-22','female'),
+('81','Nitin Tiwari','9021837465','1997-11-30','male'),
+('82','Aditi Sharma','8710293842','2001-12-27','female'),
+('83','Gaurav Reddy','9830192740','1998-01-10','male'),
+('84','Avantika Joshi','9012748360','2003-10-23','female'),
+('85','Ritesh Patel','7801937460','1999-08-17','male'),
+('86','Lavanya Nair','9201837468','2002-02-04','female'),
+('87','Arnav Kapoor','8120394750','2000-03-29','male'),
+('88','Suhani Kaur','9012837461','2001-05-21','female'),
+('89','Deepansh Singh','8701927360','1998-09-13','male'),
+('90','Trisha Das','8021749380','2003-07-28','female'),
+('91','Kabir Khan','8930271640','2000-11-17','male'),
+('92','Jahnvi Malhotra','9120384750','2002-06-01','female'),
+('93','Rohin Gupta','7819203740','1999-01-08','male'),
+('94','Sara Ali','9038172640','2001-08-15','female'),
+('95','Aayush Mehra','7891038470','2000-04-12','male'),
+('96','Navya Sharma','9012837460','2002-12-29','female'),
+('97','Harshad Jain','8901327460','1998-10-25','male'),
+('98','Ishika Verma','9120394750','2001-02-08','female'),
+('99','Jayesh Patel','7829103840','1999-06-30','male'),
+('100','Raina Sen','9012738490','2003-09-09','female');
+select * from details;
